@@ -1,0 +1,6 @@
+.vs/
+.vscode/
+*.exe
+*.out
+*.log
+*.sqlite
