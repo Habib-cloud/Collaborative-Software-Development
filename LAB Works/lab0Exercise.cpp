@@ -6,9 +6,10 @@
 using namespace std;
 
 // Function Prototypes
-double sumOfTwoNum(double num1, double num2);
-double areaOfCircle(double r);
-double cirOfCircle(double r);
+double sumOfTwoNum (double num1, double num2);
+double areaOfCircle (double r);
+double circumferenceOfCircle (double radius);
+double priceIncludigVat (double price, int vat);
 
 int main()
 {
@@ -16,38 +17,47 @@ int main()
 
     do
     {
-        cout << "\n0) Exit.";
         cout << "\n1) sum two numbers.";
         cout << "\n2) Calculate area of a circle.";
         cout << "\n3) Calculate circumference of a circle.";
         cout << "\n4) Calculate price with VAT.";
-        cout << "\nEnter choice: ";
+        cout << "\n5) Exit.";
 
+        cout << "\n\nEnter choice: ";
         cin >> choice;
 
         switch (choice)
         {
-        case 0: // No code needed
-            break;
-        case 1:
-            int num1, num2;
+        case 1:{
+            double num1, num2;
 
             cout << "Enter two numbers ";
             cin >> num1 >> num2;
-            cout << "\nResult of sum: " << sumOfTwoNum(num1, num2);
+
+            cout << "\nResult of sum: " << sumOfTwoNum(num1, num2) << endl;
             break;
-        case 2:
+        }
+        case 2:{
+            
             break;
-        case 3:
+        }
+        case 3:{
+
             break;
-        case 4:
+        }
+        case 4:{
+
             break;
+        }
+        case 5:{
+            cout << "Exiting program. Goodbye!\n";
+            break;
+        }
         default:
             cerr << "\nWrong choice!";
             break;
         }
-    } while (choice != 0);
-    cout << "\nPlease try me again:) ";
+    } while (choice != 5);
 
     return 0;
 }
