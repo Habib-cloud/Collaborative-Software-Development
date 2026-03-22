@@ -11,7 +11,7 @@ int main()
     int choice;
 
     do {
-        cout << "\n1) Sum of two numbrs.";
+        cout << "1) Sum of two numbrs.";
         cout << "\n2) Calculate area of circle.";
         cout << "\n3) Calculate circumference of circle.";
         cout << "\n4) Calculate price with VAT";
